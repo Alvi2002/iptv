@@ -1303,16 +1303,16 @@ export default function IPTVPlayer() {
                   sources.
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1.5 sm:gap-3">
                 <span className="text-[10px] sm:text-xs text-gray-600 font-medium">
                   Developed by{" "}
                   <span className="text-gray-400 font-bold">S. SHAJON</span>
                 </span>
-                <span className="text-gray-700">|</span>
+                <span className="hidden sm:inline text-gray-700">|</span>
                 <span className="text-[10px] sm:text-xs text-gray-500 font-semibold select-none cursor-help" title="This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.">
                   GPLv3 Open Source
                 </span>
-                <span className="text-gray-700">|</span>
+                <span className="hidden sm:inline text-gray-700">|</span>
                 <a
                   href="https://github.com/SHAJON-404"
                   target="_blank"

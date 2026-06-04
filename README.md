@@ -14,7 +14,6 @@ Web Players:
 - 🌌 **Three.js Cybernetic Background**: Dynamic WebGL particle flow field featuring parallax camera coordinates responsive to mouse movements, a moving neon grid floor, and glowing orbital space structures.
 - 🔍 **Interactive Channel Grid**: Filter and search through thousands of Bangla and international live TV channels in real-time. Responsive grid display dynamically adjusts for mobile, tablet, and desktop viewports.
 - ⚡ **Full Skeleton UI Loading States**: Fully unified, custom-designed pulsing skeleton templates for every card element (Player, Details, Developer Info, Total Channels, and Channel List grid) to prevent layout shifts.
-- 💳 **Developer Profile Card**: Vertically stacked and horizontally divided glassmorphic cards display developer credentials (**S. SHAJON**) alongside interactive profiles (GitHub, Telegram, Facebook) and contact methods.
 - 🧭 **Glassmorphic Sticky Header**: A tall, luxurious sticky header with brand identification, active live broadcast pulsing status, and developer contact badges.
 
 ---
