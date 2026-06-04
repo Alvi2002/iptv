@@ -17,47 +17,6 @@ Web Player: https://tools.shajon.dev/iptv
 
 ---
 
-## 🌍 1220+ Live TV Channels Database
-
-This project also includes a curated, lightweight JSON-based IPTV channel database containing 1220+ live TV channels from multiple countries and categories, collected from publicly available open-source repositories and broadcast streams.
-
-### 📂 Data Structure
-
-Each channel is stored in JSON format:
-
-```json
-{
-  "name": "Ananda TV",
-  "logo": "https://example.com/logo.png",
-  "group": "Bangla",
-  "url": "https://example.com/stream.m3u8"
-}
-```
-
-### 💻 Usage Example
-
-#### JavaScript
-```js
-fetch("https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/channels.json")
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-  });
-```
-
-#### Python
-```python
-import requests
-
-channels = requests.get(
-    "https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/channels.json"
-).json()
-
-print(channels[0])
-```
-
----
-
 ## 🛠️ Technology Stack
 
 - **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
