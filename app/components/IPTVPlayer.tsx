@@ -1200,6 +1200,8 @@ export default function IPTVPlayer() {
             >
               <video
                 ref={videoRef}
+                autoPlay
+                muted
                 playsInline
                 className="w-full h-full object-contain bg-black cursor-pointer"
               />

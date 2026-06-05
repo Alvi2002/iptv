@@ -61,8 +61,8 @@ export default function BackgroundScene() {
             top: 0,
             left: 0,
             backgroundImage: `
-              linear-gradient(to right, rgba(139, 92, 246, 0.07) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(139, 92, 246, 0.07) 1px, transparent 1px)
+              linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)
             `,
             backgroundSize: "60px 60px",
             transform: "rotateX(75deg)",
@@ -79,8 +79,8 @@ export default function BackgroundScene() {
           position: "absolute",
           inset: 0,
           backgroundImage: `
-            linear-gradient(to right, rgba(6, 182, 212, 0.02) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(6, 182, 212, 0.02) 1px, transparent 1px)
+            linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px)
           `,
           backgroundSize: "30px 30px",
         }}
