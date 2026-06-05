@@ -15,6 +15,7 @@ Web Players:
 - 🔍 **Interactive Channel Grid**: Filter and search through thousands of Bangla and international live TV channels in real-time. Responsive grid display dynamically adjusts for mobile, tablet, and desktop viewports.
 - ⚡ **Full Skeleton UI Loading States**: Fully unified, custom-designed pulsing skeleton templates for every card element (Player, Details, Developer Info, Total Channels, and Channel List grid) to prevent layout shifts.
 - 🧭 **Glassmorphic Sticky Header**: A clean, luxurious sticky header with brand identification and active live broadcast pulsing status.
+- 🏆 **World Cup 2026 Announcement Popup**: A gorgeous, highly professional popup showcasing the official joint broadcasting rights (BTV, T Sports, Somoy TV) live in Bangladesh with custom high-contrast logo backdrops and ambient glowing animations.
 
 ---
 
