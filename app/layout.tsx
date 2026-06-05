@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import WorldCupPopup from "./components/WorldCupPopup";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -84,9 +85,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const showPopup = process.env.SHOW_POPUP?.toLowerCase() === "true";
+
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <WorldCupPopup showPopup={showPopup} />
+      </body>
     </html>
   );
 }
