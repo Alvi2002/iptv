@@ -1,32 +1,31 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import Hls from "hls.js";
+import { motion, AnimatePresence } from "motion/react";
 import {
   Tv,
-  Search,
   Play,
-  ShieldAlert,
-  RefreshCw,
-  Radio,
-  Volume2,
   Pause,
+  Link,
+  Check,
+  Radio,
+  Trash2,
+  Upload,
+  Search,
+  Volume2,
   VolumeX,
   Maximize,
   Minimize,
-  PictureInPicture,
-  ChevronsLeft,
-  ChevronsRight,
-  Upload,
-  Link,
-  Trash2,
-  Check,
+  RotateCw,
+  RefreshCw,
   FileText,
   AlertCircle,
-  FolderOpen,
-  RotateCw
+  ShieldAlert,
+  PictureInPicture,
+  ChevronsLeft,
+  ChevronsRight
 } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
-import Hls from "hls.js";
 import { FaGithub, FaTelegram, FaFacebook, FaYoutube } from "react-icons/fa6";
 
 interface Channel {

@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-
+import { motion } from "motion/react";
 import { FaGithub, FaTelegram, FaFacebook, FaYoutube } from "react-icons/fa6";
 
 export default function Header() {
@@ -19,11 +18,10 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-500 ${
-        scrolled
+      className={`sticky top-0 z-50 w-full transition-all duration-500 ${scrolled
           ? "bg-[#070414]/85 backdrop-blur-2xl border-b border-white/[0.08] shadow-2xl shadow-black/40"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20 sm:h-26">
