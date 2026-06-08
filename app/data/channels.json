@@ -27580,16 +27580,6 @@
     "content_type": "application/vnd.apple.mpegurl"
   },
   {
-    "name": "Comedy Classics (1080p)",
-    "logo": "",
-    "group": "Undefined",
-    "url": "https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/ETV3I79BLYUCBY8O1B27/hls3/now,-1m/m.m3u8?ads.vf=ihIlkNrNKSy",
-    "status": "live",
-    "verified_at": "2026-06-04T15:13:13.231627",
-    "status_code": 200,
-    "content_type": "application/vnd.apple.mpegurl"
-  },
-  {
     "name": "Conecta2TV (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/cfHaLt2.png",
     "group": "News",
