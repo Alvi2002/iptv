@@ -9,31 +9,33 @@ A modern, high-performance, and premium web-based IPTV player built with **Next.
 ## ✨ Features
 
 - 📺 **Cinematic Video Player**: Large, center-aligned, aspect-ratio locked media container utilizing HLS.js and native iOS Safari player engines. Supports Picture-in-Picture (PiP), custom volume controls, double-tap seek, and auto-fallback muted play.
-- 🚀 **SHA-256 Hash-Based IndexedDB Cache**: Caches the ~3MB channel database in the browser using IndexedDB. On every page load, it queries a lightweight `/api/iptv/channels/hash` endpoint (~80 bytes). If unchanged, channels load instantly from cache, saving bandwidth and eliminating player lag.
+- 🚀 **Multi-Playlist Concurrent Loading**: Automatically initiates requests for all default playlists (**Sports**, **Universal**, and **Bangla**) immediately when loading the home page. Displays channel counts instantly and sets the **Sports** playlist as selected by default.
+- 💾 **SHA-256 Hash-Based IndexedDB Cache**: Caches each default playlist in the browser using IndexedDB. On page load, it queries a lightweight `/api/iptv/channels/hash?type=...` endpoint. If unchanged, channels load instantly from cache, saving bandwidth and eliminating player lag.
 - 📂 **High-Speed BDIX FTP Portal**: An elegant `/ftp` directory showing local BDIX movie and media servers, complete with real-time online status indicators, host configurations, speed diagnostics, and instant redirection link components.
 - 👥 **Real-Time Watcher Telemetry**: Relocated from the global header to the channel list header, using a non-blocking session heartbeat endpoint to monitor active viewers concurrently.
 - 🌌 **3D CSS Net Background**: A highly optimized, static 3D perspective cyber grid with deep purple and cyan radial glows and a subtle viewport mesh overlay, designed for maximum performance (0% CPU/GPU overhead) on all devices.
 - 🔍 **Interactive Channel Grid**: Filter and search through thousands of Bangla and international live TV channels in real-time. Responsive grid display dynamically adjusts for mobile, tablet, and desktop viewports.
 - ⚡ **Full Skeleton UI Loading States**: Fully unified, custom-designed pulsing skeleton templates for every card element (Player, Details, Developer Info, Total Channels, and Channel List grid) to prevent layout shifts.
 - 🧭 **Glassmorphic Sticky Header**: A clean, luxurious sticky header with brand identification and active live broadcast status.
-- 🏆 **World Cup 2026 Announcement Popup**: A gorgeous, highly professional popup showcasing the official joint broadcasting rights (BTV, T Sports, Somoy TV) live in Bangladesh with custom high-contrast logo backdrops and ambient glowing animations.
-- 🏎️ **Route Transition Optimizations**: Optimized static layout transitions, removing dynamic components to ensure instantaneous navigation between the player and the FTP directories.
+- 📢 **Telegram Announcement Popup**: A beautiful announcement modal prompting users to join the official Telegram channel (`t.me/shajonOTT`) for updates, stream status notifications, and channel requests. Includes a developer-mode bypass for easier testing.
 
 ---
 
 ## 🌍 Live TV Channels Database
 
-If you want to use the curated, lightweight IPTV channel database (containing 6800+ channels) in another project, media player, or Android TV, you can fetch the raw files directly:
+If you want to use the curated, lightweight IPTV channel databases in another project, media player, or Android TV, you can fetch the raw files directly:
 
-- **JSON Format**:
-  ```
-  https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/channels.json
-  ```
+### 🏆 Sports Playlist (240+ Channels)
+- **JSON**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/sports.json`
+- **M3U**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/sports.m3u`
 
-- **M3U Playlist Format** (For Android TV, VLC, Kodi, or any IPTV Player):
-  ```
-  https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/channels.m3u
-  ```
+### 🌍 Universal Playlist (7500+ Channels)
+- **JSON**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/channels.json`
+- **M3U**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/channels.m3u`
+
+### 🇧🇩 Bangla Playlist (100+ Channels)
+- **JSON**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/bangla.json`
+- **M3U**: `https://raw.githubusercontent.com/SHAJON-404/iptv/refs/heads/main/app/data/bangla.m3u`
 
 > [!IMPORTANT]
 > **License & Credit Notice**: If you use this channel database or stream source list in your own projects, you **must share and display proper credit** to the original developer (**S. SHAJON**) along with a link back to this repository.
@@ -42,11 +44,11 @@ If you want to use the curated, lightweight IPTV channel database (containing 68
 
 ## 🛠️ M3U Playlist Converter
 
-If you need the channel database in standard M3U format, you can use the built-in Node.js conversion script.
+The repository includes a built-in Node.js converter script that automatically scans and parses all JSON files in the data directory and outputs standard M3U playlists.
 
 ### Usage
 
-1. **Quick Conversion** (using defaults: `app/data/channels.json` ➔ `app/data/channels.m3u`):
+1. **Convert All Playlists** (Converts all `.json` files in `app/data/` to `.m3u`):
    ```bash
    npm run convert-m3u
    ```
