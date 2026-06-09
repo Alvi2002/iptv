@@ -1481,7 +1481,7 @@ export default function IPTVPlayer() {
                 <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center gap-4 z-10">
                   <div className="w-10 h-10 border-3 border-primary border-t-transparent rounded-full animate-spin" />
                   <span className="text-sm font-semibold tracking-wider text-primary animate-pulse">
-                    FETCHING IPTV LIVE STREAM...
+                    FETCHING REDXTV LIVE STREAM...
                   </span>
                 </div>
               )}
@@ -1666,7 +1666,7 @@ export default function IPTVPlayer() {
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border border-white/15 shadow-md">
                     <Image
                       src="https://avatars.githubusercontent.com/u/171383675?v=4"
-                      alt="S. SHAJON"
+                      alt="ALVI AHMED"
                       width={48}
                       height={48}
                       className="w-full h-full object-cover"
@@ -1676,11 +1676,11 @@ export default function IPTVPlayer() {
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                    S. SHAJON
+                    ALVI AHMED 
                   </h3>
                   <div className="flex items-center gap-3 mt-1.5">
                     <a
-                      href="https://github.com/SHAJON-404"
+                      href="https://github.com/Alvi2002"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-zinc-300 hover:text-white transition-colors"
@@ -1689,7 +1689,7 @@ export default function IPTVPlayer() {
                       <FaGithub size={18} />
                     </a>
                     <a
-                      href="https://t.me/SHAJON"
+                      href="https://t.me/Real_Alvi"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-zinc-300 hover:text-[#26A5E4] transition-colors"
@@ -1698,7 +1698,7 @@ export default function IPTVPlayer() {
                       <FaTelegram size={18} />
                     </a>
                     <a
-                      href="https://www.facebook.com/shahmakhdumshajonofficial"
+                      href="https://www.facebook.com/AlviAhmed2002"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-zinc-300 hover:text-[#1877F2] transition-colors"
@@ -1707,7 +1707,7 @@ export default function IPTVPlayer() {
                       <FaFacebook size={18} />
                     </a>
                     <a
-                      href="https://youtube.com/@SHAJON-404"
+                      href="https://youtube.com/@MeowMintStudio"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-zinc-300 hover:text-[#FF0000] transition-colors"
@@ -1724,7 +1724,7 @@ export default function IPTVPlayer() {
 
               {/* Right block: Support details */}
               <p className="text-[10px] sm:text-[10.5px] leading-normal text-zinc-400 font-medium select-text flex-1 pl-1 min-w-[120px]">
-                For any support, contact via <a href="https://t.me/SHAJON" target="_blank" rel="noopener noreferrer" className="text-[#26A5E4] font-bold hover:underline">Telegram only</a>. Follow GitHub for updates!
+                For any support, contact via <a href="https://t.me/Real_Alvi" target="_blank" rel="noopener noreferrer" className="text-[#26A5E4] font-bold hover:underline">Telegram only</a>. Follow GitHub for updates!
               </p>
             </div>
 
