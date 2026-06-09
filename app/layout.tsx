@@ -8,7 +8,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://tv.shajon.dev";
+// এখানে আপনার Vercel-এর লিঙ্কটি দিন (যেমন: https://iptv-alvi.vercel.app)
+const siteUrl = "https://redxtvbyalvi.vercel.app/"; 
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -21,27 +22,22 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "IPTV Player — Watch 6500+ Live TV Channels Free",
+  title: "REDXTV — Watch 6500+ Live TV Channels Free", // অ্যাপের নাম পরিবর্তন
   description:
-    "Stream 6500+ live TV channels from Bangladesh, India, and worldwide. Premium IPTV web player with HLS streaming, custom playlist support, and a modern UI. No app install needed.",
+    "Stream 6500+ live TV channels from Bangladesh, India, and worldwide on REDXTV. Premium IPTV web player with HLS streaming, custom playlist support, and a modern UI.",
   keywords: [
+    "REDXTV",
     "IPTV",
     "live TV",
     "streaming",
     "HLS player",
-    "TV channels",
     "Bangladesh TV",
-    "sports live",
-    "T Sports",
     "free TV",
     "online TV",
-    "IPTV player",
-    "m3u player",
-    "web TV player",
   ],
-  authors: [{ name: "S. SHAJON", url: "https://github.com/SHAJON-404" }],
-  creator: "S. SHAJON",
-  publisher: "S. SHAJON",
+  authors: [{ name: "Alvi Ahmed", url: "https://github.com/Alvi2002" }], // আপনার নাম ও লিঙ্ক
+  creator: "Alvi Ahmed", // আপনার নাম
+  publisher: "Alvi Ahmed", // আপনার নাম
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
@@ -58,16 +54,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "IPTV Player",
-    title: "IPTV Player — Watch 6500+ Live TV Channels Free",
+    siteName: "REDXTV", // অ্যাপের নাম
+    title: "REDXTV — Watch 6500+ Live TV Channels Free",
     description:
-      "Stream 6500+ live TV channels from Bangladesh, India, and worldwide. Premium IPTV web player with HLS streaming, custom playlist support, and a modern UI.",
+      "Stream 6500+ live TV channels from Bangladesh, India, and worldwide on REDXTV. Premium IPTV web player with HLS streaming.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "IPTV Player — Live TV streaming with 6500+ channels",
+        alt: "REDXTV — Live TV streaming",
         type: "image/png",
       },
     ],
@@ -85,6 +81,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // এগুলা Vercel Environment Variables থেকে কন্ট্রোল করা যায়
   const showPopup = process.env.SHOW_POPUP?.toLowerCase() === "true";
   const disableWcPopup = process.env.DISABLE_WC_POPUP?.toLowerCase() === "true";
   const disableTgPopup = process.env.DISABLE_TG_POPUP?.toLowerCase() === "true";
@@ -101,4 +98,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+    }
