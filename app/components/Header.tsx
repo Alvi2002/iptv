@@ -41,7 +41,7 @@ export default function Header() {
               <div className="relative w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 sm:border-white/15 group-hover:border-primary/40 shadow-xl shadow-primary/20 bg-white/5 flex-shrink-0 transition-colors">
                 <Image
                   src="/logo.png"
-                  alt="IPTV Player Logo"
+                  alt="REDXTV Logo"
                   fill
                   sizes="(max-width: 640px) 40px, 56px"
                   className="object-cover group-hover:scale-105 transition-transform"
@@ -49,27 +49,27 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col justify-center">
-                {/* Mobile UI Brand */}
-                <span className="text-lg font-black tracking-tight text-white sm:hidden leading-none select-none">
-                  IP<span className="gradient-text">TV</span>
+                {/* Mobile UI Brand - REDXTV */}
+                <span className="text-lg font-black tracking-tight text-white sm:hidden leading-none select-none uppercase">
+                  REDX<span className="gradient-text">TV</span>
                 </span>
 
-                {/* Desktop UI Brand */}
+                {/* Desktop UI Brand - REDXTV */}
                 <div className="hidden sm:flex items-baseline gap-1">
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white">
-                    IP
+                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white uppercase">
+                    REDX
                   </span>
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight gradient-text">
-                    TV Player
+                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight gradient-text uppercase">
+                    TV
                   </span>
                 </div>
 
-                {/* Desktop Live Broadcast Badge */}
+                {/* Live Broadcast Badge with Developer Name */}
                 <div className="hidden sm:flex items-center gap-2 mt-1.5">
                   <div className="flex items-center gap-1.5">
-                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="text-[9px] sm:text-[10px] font-bold tracking-widest uppercase text-emerald-400">
-                      LIVE BROADCAST
+                    <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+                    <span className="text-[9px] sm:text-[10px] font-bold tracking-widest uppercase text-red-400">
+                      LIVE • BY ALVI AHMED
                     </span>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Header() {
             </motion.div>
           </Link>
 
-          {/* Right side navigation / FAQ & FTP Buttons */}
+          {/* Right side navigation */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -103,8 +103,8 @@ export default function Header() {
               {isFtpPage ? (
                 <>
                   <Tv size={15} className="text-primary" />
-                  <span className="hidden sm:inline">Watch Live TV</span>
-                  <span className="sm:hidden">Live TV</span>
+                  <span className="hidden sm:inline">Watch REDXTV</span>
+                  <span className="sm:hidden">Live</span>
                 </>
               ) : (
                 <>
@@ -119,4 +119,4 @@ export default function Header() {
       </div>
     </header>
   );
-}
+      }
