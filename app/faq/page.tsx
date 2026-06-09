@@ -19,44 +19,44 @@ import Header from "../components/Header";
 const faqs = [
   {
     id: "faq-1",
-    question: "What is IPTV and how does this player work?",
+    question: "What is REDXTV and how does it work?",
     answer:
-      "IPTV (Internet Protocol Television) delivers television content over the internet instead of traditional terrestrial, satellite, or cable formats. This player is a web-based client that plays live streams (such as HLS .m3u8 files) directly in your browser. You can load our default channel list or import your own custom playlists.",
+      "REDXTV is a high-performance, web-based IPTV player that allows you to stream live television content directly in your browser. It uses HLS technology to play .m3u8 and .m3u playlists from worldwide sources without needing any extra software.",
     icon: Tv,
   },
   {
     id: "faq-2",
     question: "How do I load or import custom playlists?",
     answer:
-      "To import a custom playlist, click on the 'Playlists Manager' tab inside the channel list section. You can either paste a public M3U URL (e.g., from GitHub) or upload a local playlist file (.m3u, .m3u8, or .json). Once imported, it will be stored securely in your browser cache and appear in the 'Your Playlists' sidebar.",
+      "To import your own list, go to the 'Playlists Manager' tab. You can paste an M3U URL or upload a local file (.m3u, .json). REDXTV will store these securely in your browser's local storage so they remain available even after a refresh.",
     icon: ListPlus,
   },
   {
     id: "faq-3",
-    question: "Why do some channels fail to load or show 'Stream Unavailable'?",
+    question: "Why do some channels show 'Stream Unavailable'?",
     answer:
-      "Live streams can go offline for various reasons: the stream source is temporarily overloaded, the broadcaster changed the URL, or the stream has geographical restrictions (geo-blocking). If a stream fails to load, try clicking the 'Try Reconnecting' button, or switch to a different channel.",
+      "Live streams depend on the original broadcaster's server. If a channel doesn't load, it might be offline, geo-restricted, or the URL has expired. Try the 'Reload' button or check if other channels from the same list are working.",
     icon: ShieldAlert,
   },
   {
     id: "faq-4",
-    question: "Do I need to install any app or extensions?",
+    question: "Do I need to install an Android/iOS app?",
     answer:
-      "No! This IPTV player runs completely in modern web browsers (Chrome, Safari, Edge, Firefox) on mobile devices, tablets, and computers. It has a built-in custom HLS stream player, so no additional extensions or app installations are required.",
+      "No. REDXTV is a Progressive Web App (PWA). You can simply use it from any browser. For an app-like experience on mobile, use the 'Add to Home Screen' option in your browser menu.",
     icon: Globe,
   },
   {
     id: "faq-5",
-    question: "Is this service free and legal?",
+    question: "Is REDXTV free and safe?",
     answer:
-      "Yes, this web player is 100% free to use. We do not host any stream files or media databases. The default channel list consists of publicly available free-to-air (FTA) channels. We encourage users to only load playlist links that they have the legal right to stream.",
+      "Yes, REDXTV is 100% free and open-source. We do not host any media content; we only provide the player to view publicly available streams. Your privacy is protected as we don't track your viewing habits.",
     icon: BookOpen,
   },
   {
     id: "faq-6",
-    question: "How can I contact support or request channels?",
+    question: "How can I contact Alvi Ahmed for support?",
     answer:
-      "For any queries, suggestions, or technical support, please contact the developer via Telegram only (@SHAJON). You can also follow our official GitHub repository (SHAJON-404/iptv) for code updates, bug reports, and new features.",
+      "For technical support, feature requests, or reporting bugs, you can contact Alvi Ahmed directly on Telegram (@Real_Alvi). You can also follow our GitHub (Alvi2002/iptv) for the latest updates.",
     icon: MessageCircle,
   },
 ];
@@ -85,7 +85,7 @@ export default function FAQPage() {
             >
               <HelpCircle size={14} className="text-primary animate-pulse" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-primary">
-                Help & Knowledgebase
+                REDXTV Knowledgebase
               </span>
             </motion.div>
 
@@ -104,12 +104,11 @@ export default function FAQPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-sm sm:text-base text-gray-400 font-medium max-w-xl mx-auto leading-relaxed"
             >
-              Got questions about custom playlists, stream issues, or compatibility?
-              Find quick answers and guides below.
+              Everything you need to know about REDXTV streaming, custom playlists, and compatibility.
             </motion.p>
           </div>
 
-          {/* ─── FAQ List (Accordion style with glassmorphism) ─── */}
+          {/* ─── FAQ List ─── */}
           <div className="space-y-4">
             {faqs.map((faq, idx) => {
               const IconComponent = faq.icon;
@@ -165,7 +164,7 @@ export default function FAQPage() {
             })}
           </div>
 
-          {/* ─── Support Callout ─── */}
+          {/* ─── Support Callout (Updated to @Real_Alvi) ─── */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -174,18 +173,17 @@ export default function FAQPage() {
           >
             <h3 className="text-base sm:text-lg font-bold">Still have questions?</h3>
             <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-              If you couldn&apos;t find your answer here, feel free to reach out for direct support.
-              We are active on Telegram.
+              If you couldn&apos;t find your answer here, feel free to reach out to the developer **Alvi Ahmed**.
             </p>
             <div className="pt-2">
               <a
-                href="https://t.me/SHAJON"
+                href="https://t.me/Real_Alvi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary/95 text-white font-extrabold text-xs sm:text-sm transition-all duration-300 shadow-md shadow-primary/10 hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
               >
                 <MessageCircle size={15} />
-                <span>Contact via Telegram</span>
+                <span>Contact Alvi via Telegram</span>
               </a>
             </div>
           </motion.div>
@@ -193,4 +191,4 @@ export default function FAQPage() {
       </div>
     </main>
   );
-}
+                  }
