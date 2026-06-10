@@ -1724,7 +1724,7 @@ export default function IPTVPlayer() {
 
               {/* Right block: Support details */}
               <p className="text-[10px] sm:text-[10.5px] leading-normal text-zinc-400 font-medium select-text flex-1 pl-1 min-w-[120px]">
-                For any support, contact via <a href="https://t.me/Real_Alvi" target="_blank" rel="noopener noreferrer" className="text-[#26A5E4] font-bold hover:underline">Telegram only</a>. Follow GitHub for updates!
+                For any support, contact via <a href="https://t.me/SHAJON" target="_blank" rel="noopener noreferrer" className="text-[#26A5E4] font-bold hover:underline">Telegram only</a>. Follow GitHub for updates!
               </p>
             </div>
 
